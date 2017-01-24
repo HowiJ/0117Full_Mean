@@ -8,11 +8,11 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>Name</td>
-      <td>Age</td>
-      <td>E</td>
-      <td>X</td>
+    <tr ng-repeat="friend in friends">
+      <td ng-bind="friend.name"></td>
+      <td ng-bind="friend.age"></td>
+      <td><a href="#!/edit/{{friend._id}}">E</a></td>
+      <td><button ng-click="delete(friend)">X</button></td>
     </tr>
   </tbody>
 </table>

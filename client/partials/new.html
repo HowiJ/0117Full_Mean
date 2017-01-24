@@ -1,5 +1,11 @@
-<form>
-  <input type="text" placeholder="Name">
-  <input type="number" placeholder="Age">
+<h1>Hey {{user}}</h1>
+
+<div ng-repeat="error in errors" ng-if="errors!={}">
+  {{error.message}}
+</div>
+
+<form ng-submit="create()">
+  <input ng-model="newFriend.name" type="text" placeholder="Name">
+  <input ng-model="newFriend.age" type="number" placeholder="Age">
   <input type="submit" value="Add">
 </form>
