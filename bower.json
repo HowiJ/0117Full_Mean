@@ -1,0 +1,17 @@
+{
+  "name": "0117FullMean",
+  "description": "",
+  "main": "server.js",
+  "authors": [
+    "Howard Jiang <me@howardjiang.com> (http://howardjiang.com)"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
